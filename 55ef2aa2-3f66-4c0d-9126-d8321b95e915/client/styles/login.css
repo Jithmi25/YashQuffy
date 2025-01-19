@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../assets/signup.jpg') no-repeat center center fixed; /* Use the same background image as the signup page */
+    background-size: cover; /* Cover the entire body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 80%; /* Adjust height if needed */
+    align-items: center; /* Center items vertically within the container */
+    justify-content: center; /* Center items horizontally */
+}
+
+.login-form {
+    width: 40%; /* Reduced width for better centering */
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center elements inside the form */
+}
+
+.loginTitle {
+    color: #4a0f4a; /* Match the signup title color */
+    font-size: 48px; /* Match the signup title size */
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.loginDesc {
+    color: #333; /* Match the signup intro text color */
+    font-size: 18px; /* Match the signup intro text size */
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #352d42; /* Match the signup button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.bottom-line {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bottom-line a {
+    color: #6a52a3; /* Match the signup link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-message {
+    color: rgb(212, 4, 4);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}

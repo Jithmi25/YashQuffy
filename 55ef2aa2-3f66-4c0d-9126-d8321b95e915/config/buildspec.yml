@@ -1,0 +1,41 @@
+version: 0.2
+
+env:
+  variables:
+    JWT_PRIVATE_KEY: "582bd4512529ca75ac9554ca0372a6d48103c07c875df2841a463b9a826b749e42edc119c6aee2cab6c8b4f7fa73c891b7dba9e3aa85c5550ef44cee7d083b5c"
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+      nodejs: 18
+    commands:
+      - echo Installing Project dependencies
+      - npm install --silent
+      - npm install -g vitest
+      - echo Finished Installing Project dependencies
+
+  pre_build:
+    commands:
+      - echo Testing Project
+      - echo $CODE_COMMIT_REPO
+      - cd config
+      - npm install
+      - cd ..
+      - sleep 10
+      - npm test || echo $CODE_COMMIT_REPO > ./config/repo.txt
+      - sleep 5
+      - cd config
+      - node result.js
+      - cd ..
+      - echo Finished Testing Project
+      - sleep 5
+
+  build:
+    commands:
+      - echo Building Project
+      - echo Finished Building
+
+cache:
+  paths:
+    - "node_modules/**/*"

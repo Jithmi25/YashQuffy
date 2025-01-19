@@ -1,0 +1,9 @@
+body {
+    font-family: 'Jost';
+    background: linear-gradient(to bottom right, #000, #2e092e, #460C46, #000);
+    color: #5c5c5c;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}

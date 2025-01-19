@@ -1,0 +1,41 @@
+{
+  "name": "hacktitude-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx node-dev src/server.js",
+    "start-dev": "npx nodemon src/server.js",
+    "migrate": "npm run delete-db && npx knex migrate:latest",
+    "seed": "npx knex seed:run",
+    "delete-db": "del-cli main.sqlite3",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.3",
+    "boxicons": "^2.1.4",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "del-cli": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-jwt": "^8.4.1",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.7",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "supertest": "^6.3.4",
+    "supertest-session": "^5.0.1",
+    "vitest": "^1.4.0"
+  }
+}

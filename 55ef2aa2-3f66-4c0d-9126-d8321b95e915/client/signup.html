@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/fonts.css" rel="stylesheet" />
+    <script src="js/signup.js" type="module"></script>
+  </head>
+
+  <body class="dark-theme">
+    <div class="signup-container">
+      <div class="signup-form">
+        <h2 class="signupTitle mb-3">Create an Account</h2>
+        <form id="signupForm">
+          <p class="form-intro">
+            Please fill your details to create an account.
+          </p>
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+
+          <div class="row mb-3">
+            <div class="col">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required />
+            </div>
+            <div class="col">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required />
+            </div>
+            <div class="col">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                required
+              />
+            </div>
+          </div>
+
+          <p id="error-message" class="error-message" style="display: none"></p>
+
+          <div class="singUpButton">
+            <button type="submit" class="btn-primary">Sign Up</button>
+          </div>
+          
+
+          <div class="bottom-line">
+            <p>
+              Already have an account?
+              <a href="login.html">Sign In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </body>
+</html>

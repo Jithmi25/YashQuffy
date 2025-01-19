@@ -1,0 +1,14 @@
+.card-bg {
+  background-color: #4d044d;
+  border-width: 2px;
+  border-color: #ff625a71;
+  height: 450px;
+}
+.genre-tags {
+  color: #fff;
+  font-weight: 500;
+  padding: 0rem 0.6rem;
+  margin-right: 1rem;
+  background-color: #ff615a;
+  border-radius: 1rem;
+}

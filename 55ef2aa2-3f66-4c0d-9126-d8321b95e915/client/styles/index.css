@@ -1,0 +1,195 @@
+/* General carousel styling */
+.carousel.slide {
+    height: 100vh;
+    background-image: url("../img/3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .carousel.slide {
+        height: 70vh; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust carousel item images */
+    #center .carousel-item img {
+        height: auto;
+        object-fit: cover; /* Ensure images cover the area */
+    }
+
+    /* Adjust caption padding and size */
+    .carousel-caption {
+        padding: 30px 20px; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    /* Carousel indicators positioning */
+    .carousel-indicators {
+        bottom: 10px; /* Move indicators up slightly */
+    }
+
+    /* Adjust the control buttons size */
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 10%; /* Make controls smaller on mobile */
+    }
+
+    /* Adjusting caption width */
+    .carousel-caption p {
+        width: 100%; /* Make text take up full width on smaller screens */
+        font-size: 0.8rem; /* Adjust text size */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel.slide {
+        height: 60vh; /* Further reduce height on very small screens */
+    }
+
+    /* Further adjustments to the caption */
+    .carousel-caption {
+        padding: 20px 15px;
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption p {
+        width: 100%; /* Full width on very small screens */
+        font-size: 0.7rem; /* Smaller font for small screens */
+    }
+
+    /* Indicators position */
+    .carousel-indicators {
+        bottom: 5px; /* Further adjust position */
+    }
+}
+
+/* Hide scrollbars for carousel */
+.carousel-inner::-webkit-scrollbar {
+    display: none;
+}
+
+/* General styling for carousel items */
+.carousel-inner, .carousel-item {
+    height: 100vh;
+}
+
+/* Adjusting the image within the carousel */
+#center .carousel-item img {
+    height: auto;
+    width: 100%; /* Full width */
+    object-fit: contain; /* Contain the image within the given height */
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+    position: absolute;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 50px 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+/* Control buttons */
+.carousel-control-next,
+.carousel-control-prev {
+    width: 6%;
+}
+
+/* Adjusting carousel captions width */
+.carousel-caption p {
+    width: 45%;
+}
+
+/* Position indicators properly */
+.carousel-indicators {
+    bottom: 0;
+}
+
+/* Custom responsive styles */
+@media (max-width: 768px) {
+    .movie-details {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .movie-poster img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .movie-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .movie-poster img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .movie-details {
+      text-align: left;
+    }
+  
+    .movie-title {
+      font-size: 1.2rem;
+    }
+  }
+
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+}
+
+#discounted {
+    background-color: #1a1a1a;
+}
+
+.movie-poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-poster img {
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover img {
+    transform: scale(1.05);
+}
+
+.poweredBy {
+    color: #ffffff;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: linear-gradient(to bottom right, #000, #2e092e, #460C46, #000);
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}

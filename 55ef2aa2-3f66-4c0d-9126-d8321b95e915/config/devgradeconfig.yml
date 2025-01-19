@@ -1,0 +1,8 @@
+version: 1.0
+
+template_name: 99x-Hacktitude-2024
+
+stack: javascript
+
+test_files:
+  - "**/*.test.js"

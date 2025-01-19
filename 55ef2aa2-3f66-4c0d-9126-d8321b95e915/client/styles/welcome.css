@@ -1,0 +1,276 @@
+/* Add this to your existing styles/index.css file or create a new one */
+
+.mainContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.divider {
+    color: var(--primary, #cec7e2);
+}
+
+.topNavBar {
+    height: 136px;
+}
+
+.navBarTitle {
+    color: var(--secondary, #ff615a);
+    font-family: "Jost";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    margin-top: 30px;
+}
+
+#signUpBtn {
+    width: 100px
+}
+
+#loginBtn {
+    background-color: #483387;
+    color: white;
+    width: 100px
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a>button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.innerContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resized-image {
+    padding-top: 65px;
+    width: 380px;
+    height: auto;
+}
+
+.titleContainer {
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 76px;
+}
+
+/* .title {
+    color: var(--secondary, #ff615a);
+    font-family: "Jost";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    margin-left: 100px;
+    margin-top: 150px;
+} */
+
+.title {
+    font-family: "Jost";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .title:hover {
+    color: #ff6347; 
+    transform: scale(1.1); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+
+.btnGetstarted1 {
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #483387;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.bannerImage {
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 150px;
+}
+
+.whatWeOffer p {
+    color: var(--primary, #ff615a);
+    font-family: "Jost";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.46px;
+} 
+
+.card {
+    background: #e4e4e4;
+    backdrop-filter: blur(138.5px);
+    border: 1px solid rgb(255, 255, 255);
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-card-image {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    transition: transform 0.3s ease; 
+}
+
+.card:hover .custom-card-image {
+    transform: scale(1.1); 
+}
+
+.custom-card-title {
+    text-align: center;
+    color: var(--gray-900, #212529);
+    font-family: "Jost";
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    margin-top: 25px;
+    transition: color 0.3s ease; 
+}
+
+.card:hover .custom-card-title {
+    color: #ff6347; 
+}
+
+.custom-card-text {
+    color: var(--body-text-base-color, #483387);
+    text-align: center;
+    font-size: large;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 30px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card:hover .custom-card-text {
+    transform: translateY(-10px); 
+    opacity: 1; 
+}
+
+.cardSection {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+
+.getStartedContainer {
+    border-radius: 76px;
+    background: rgba(255, 255, 255, 0.651);
+    backdrop-filter: blur(138.5px);
+    height: 400px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.getStartedContainer-title {
+    margin-top: 100px;
+    color: var(--primary, #483387);
+    font-family: "Jost";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.46px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnGetstarted2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #483387;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Jost";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    transition: all 0.3s ease;
+}
+
+.btnGetstarted2:hover {
+    background-color: #6b5fb5; 
+    color: #fff;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+
+
+.poweredBy {
+    color: #585858;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #e4e4e4;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-text{
+    color: var(--secondary, #ff615a);
+    font-family: "Jost";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+    margin-top: 30px;
+}
